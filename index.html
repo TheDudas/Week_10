@@ -4,8 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Week 10 JDudas</title>
-    <script src="./script.js"></script>
-<body>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+
+
+    <body>
+    <!-- 
+    Coding Steps:
+Using HTML, Bootstrap, and JavaScript create a single page website that contains the following:
+A Bootstrap styled table representing your choice of data.
+A Bootstrap styled form that allows a user to add a new row to the table when clicking on submit.
     
+    -->
+
+    <!-- go to getbootstrap.com to get the correct links for this page. -->
+
+
+
+<table class="table table-dark" >
+    <thead id="tHead" center-align> Fishing Contest Results
+        <th>#</th>
+        <th>First</th>
+        <th>Last</th>
+        <th>Fish Type</th>
+        <th>Fish Weight</th>
+    </thead>
+    <tbody id="tBody">
+           
+    </tbody>
+
+</table>
+
+
+<form>
+    <div>
+        <label for="firstName" class="form-label">First Name</label>
+        <input required type="text" class="form-control" id="firstName" />
+    </div>
+    <div>
+        <label for="lastName" class="form-label">Last Name</label>
+        <input required type="text" class="form-control" id="lastName" />
+    </div>
+    <div>
+        <label for="fishType" class="form-label">Fish Type</label>
+        <input type="text" class="form-control" id="fishType" />
+    </div>
+    <div>
+        <label for="fishWeight" class="form-label">Fish Weight</label>
+        <input type="text" class="form-control" id="fishWeight" />
+    </div>
+
+    <button type="submit" class="btn btn-primary" id="formSubmit">Submit</button>
+
+</form>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<script src="./script.js"></script>
+
 </body>
 </html>
